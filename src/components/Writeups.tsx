@@ -9,8 +9,8 @@ import type { Project } from './Projects'
 const writeups: Project[] = [
   {
     title: 'CVE-26206-2025',
-    description: 'A critical CSRF vulnerability in Sell Done Storefront v1.0 and its impact.',
-    image: '/CVE-26206-2025.webp',
+    description: 'A critical Cross-Site Request Forgery (CSRF) vulnerability that let attackers escalate privileges in web apps. But this story isn’t really about that CVE.',
+    image: '/CVE.webp',
     liveLink: '/CVE-26206-2025',
     liveLabel: 'Read',
     sourceLink: '',
