@@ -1,20 +1,15 @@
 import Link from 'next/link'
 import React from 'react'
 import { Socials } from './ui/socials'
-import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa6'
-import { IconBrandX, IconMail } from '@tabler/icons-react'
+import { FaCalendar, FaGithub, FaInstagram, FaLinkedin, FaMedium } from 'react-icons/fa6'
+import { IconBrandX } from '@tabler/icons-react'
 import { Highlight } from './ui/highlight'
 
 const socials = [
   {
-    name: 'GitHub',
-    link: 'https://github.com/xibhi',
-    icon: FaGithub
-  },
-  {
-    name: 'X',
-    link: 'https://x.com/xibhi_',
-    icon: IconBrandX
+    name: 'Cal',
+    link: 'https://cal.com/xibhi',
+    icon: FaCalendar
   },
   {
     name: 'Instagram',
@@ -22,14 +17,25 @@ const socials = [
     icon: FaInstagram
   },
   {
-    name: 'Linkedin',
-    link: 'https://www.linkedin.com/in/sibhibalamurugan',
-    icon: FaLinkedinIn
+    name: 'X',
+    link: 'https://x.com/xibhi_',
+    icon: IconBrandX
   },
   {
-    name: 'Email',
-    link: 'mailto:sibhi.b@proton.me',
-    icon: IconMail
+    name: 'Linkedin',
+    link: 'https://www.linkedin.com/in/sibhibalamurugan',
+    icon: FaLinkedin
+  },
+  {
+    name: 'GitHub',
+    link: 'https://github.com/xibhi',
+    icon: FaGithub
+  },
+  
+  {
+    name: 'Medium',
+    link: 'https://medium.com/@xibhi',
+    icon: FaMedium
   }
 ]
 
