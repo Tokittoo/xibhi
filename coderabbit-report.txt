@@ -1,0 +1,3 @@
+Error: Git repository not found.
+Please run this command from within a Git repository or use the --cwd flag to specify a project directory.
+

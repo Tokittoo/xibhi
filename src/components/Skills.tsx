@@ -1,26 +1,25 @@
-import Image from 'next/image';
 import React from 'react'
 import { AnimationWrapper, childVariant } from './ui/animation-wrapper';
 import * as motion from 'motion/react-client';
-
+import {  FaBug, FaTerminal, FaAtom, FaRobot } from 'react-icons/fa';
+import { BsCloudCheck, BsShieldLock } from 'react-icons/bs';
+import { FiSettings } from "react-icons/fi";
+import { MdBrush } from 'react-icons/md';
+import { IoRadio } from "react-icons/io5";
 type Skill = {
   name: string;
-  icon: string
+  icon: React.ReactNode
 }
 
-const languages: Skill[] = [
-  { name: "C/C++", icon: "/skills/C.svg" },
-  { name: "Python", icon: "/skills/python.svg" },
-  { name: "PHP", icon: "/skills/php.svg" },
-  { name: "Java", icon: "/skills/C.svg" },
-  { name: "Rust", icon: "/skills/Rust.svg" },
-  { name: "Solidity", icon: "/skills/pngwing.com.svg" },
-  { name: "Application Development & Security", icon: "/skills/security.svg" },
-  { name: "Cloud Security", icon: "/skills/cloud-security.svg" },
-  { name: "Web3 Security", icon: "/skills/ethereum.svg" },
-  { name: "RF Security", icon: "/skills/rf.svg" },
-  { name: "3D Art & Animation", icon: "/skills/dimensions.svg" },
-  { name: "Graphic Design", icon: "/skills/art-studies.svg" },
+const cybersecurity: Skill[] = [
+  { name: "Web App Exploitation", icon: <FaBug size={18} /> },
+  { name: "Offensive Reverse Engineering", icon: <FiSettings size={18} /> },
+  { name: "Cloud Security and Operations", icon: <BsCloudCheck size={18} /> },
+  { name: "Wireless Security Assessment", icon: <IoRadio size={18} /> },
+  { name: "Scripting and Automation", icon: <FaTerminal size={18} /> },
+  { name: "Adversarial ML & AI Security", icon: <FaRobot size={18}/> },
+  { name: "2D/3D Concept Artist", icon: <MdBrush size={18} /> },
+  { name: "Physics Programming", icon: <FaAtom size={18} /> }
 ];
 
 
@@ -31,7 +30,7 @@ const Skills = () => {
       <motion.div variants={childVariant} className='my-4'>
         <AnimationWrapper className='flex flex-wrap gap-2'>
           {
-            languages.map(l => (
+            cybersecurity.map(l => (
               <motion.div variants={childVariant} key={l.name}>
                 <Tag tag={l} />
               </motion.div>
@@ -46,12 +45,9 @@ const Skills = () => {
 
 const Tag = ({ tag }: { tag: Skill }) => (
   <div className='flex items-center gap-2 bg-muted border border-border rounded-lg px-3 py-1 transition-colors duration-200 hover:border-foreground/70 select-none'>
-    <Image
-      src={tag.icon}
-      height={18}
-      width={18}
-      alt={tag.name}
-    />
+    <span className='text-foreground/80 flex items-center' aria-label={tag.name}>
+      {tag.icon}
+    </span>
     <span className='text-sm'>{tag.name}</span>
   </div>
 )

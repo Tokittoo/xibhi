@@ -45,7 +45,7 @@ const Footer = () => {
     <footer className='w-full flex flex-col gap-2 justify-center items-center mt-16 min-h-[20rem]'>
       <h1 className='font-sans font-bold tracking-tight text-4xl md:text-5xl'>Get in Touch</h1>
       <p className='text-muted-foreground text-center text-balance'>Want to chat? Just shoot me a
-        <Link href={'https://x.com/intent/follow?screen_name=_MSaaDH'} target='_blank'>
+        <Link href={'https://t.me/XIBHl'} target='_blank'>
           <Highlight className='hover:underline underline-offset-2 mx-1'>
             DM
           </Highlight>
