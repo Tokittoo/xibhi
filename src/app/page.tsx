@@ -11,8 +11,8 @@ const Home = () => {
     <AnimationWrapper>
       <Intro />
       <Skills />
-      <Projects />
       <Writeups />
+      <Projects />
     </AnimationWrapper>
   )
 }

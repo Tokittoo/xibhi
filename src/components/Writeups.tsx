@@ -3,6 +3,7 @@
 import Card from './Card'
 import { motion } from 'motion/react'
 import { childVariant } from './ui/animation-wrapper'
+import { FaMedium } from 'react-icons/fa6'
 
 import type { Project } from './Projects'
 
@@ -14,7 +15,12 @@ const writeups: Project[] = [
     liveLink: '/CVE-26206-2025',
     liveLabel: 'Read',
     sourceLink: '',
-    tags: [],
+    tags: [
+      {
+        name: 'Medium',
+        logo: <FaMedium size={18} />
+      }
+    ],
   },
 ]
 

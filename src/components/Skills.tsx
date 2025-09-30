@@ -14,10 +14,7 @@ const languages: Skill[] = [
   { name: "PHP", icon: "/skills/php.svg" },
   { name: "Java", icon: "/skills/C.svg" },
   { name: "Rust", icon: "/skills/Rust.svg" },
-  { name: "Solidity", icon: "/skills/pngwing.com.svg" }
-];
-
-const frameworks: Skill[] = [
+  { name: "Solidity", icon: "/skills/pngwing.com.svg" },
   { name: "Application Development & Security", icon: "/skills/security.svg" },
   { name: "Cloud Security", icon: "/skills/cloud-security.svg" },
   { name: "Web3 Security", icon: "/skills/ethereum.svg" },
@@ -32,7 +29,6 @@ const Skills = () => {
     <div className='my-8'>
       <motion.h1 variants={childVariant} className='text-3xl md:text-4xl font-sans font-bold tracking-tight'>Skills</motion.h1>
       <motion.div variants={childVariant} className='my-4'>
-        <h3 className='font-sans tracking-tight my-2'>Languages</h3>
         <AnimationWrapper className='flex flex-wrap gap-2'>
           {
             languages.map(l => (
@@ -43,18 +39,7 @@ const Skills = () => {
           }
         </AnimationWrapper>
       </motion.div>
-      <motion.div variants={childVariant} className='my-4'>
-        <h3 className='font-sans tracking-tight my-2'>Knowledges</h3>
-        <AnimationWrapper className='flex flex-wrap gap-2'>
-          {
-            frameworks.map(f => (
-              <motion.div variants={childVariant} key={f.name}>
-                <Tag tag={f} />
-              </motion.div>
-            ))
-          }
-        </AnimationWrapper>
-      </motion.div>
+      
     </div>
   )
 }
