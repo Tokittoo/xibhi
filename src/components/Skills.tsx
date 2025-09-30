@@ -2,7 +2,7 @@ import React from 'react'
 import { AnimationWrapper, childVariant } from './ui/animation-wrapper';
 import * as motion from 'motion/react-client';
 import {  FaBug, FaTerminal, FaAtom, FaRobot } from 'react-icons/fa';
-import { BsCloudCheck, BsShieldLock } from 'react-icons/bs';
+import { BsCloudCheck } from 'react-icons/bs';
 import { FiSettings } from "react-icons/fi";
 import { MdBrush } from 'react-icons/md';
 import { IoRadio } from "react-icons/io5";
@@ -53,3 +53,4 @@ const Tag = ({ tag }: { tag: Skill }) => (
 )
 
 export default Skills
+
