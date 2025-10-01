@@ -18,7 +18,7 @@ const cybersecurity: Skill[] = [
   { name: "Wireless Security Assessment", icon: <IoRadio size={18} /> },
   { name: "Scripting and Automation", icon: <FaTerminal size={18} /> },
   { name: "Adversarial ML & AI Security", icon: <FaRobot size={18}/> },
-  { name: "2D/3D Concept Artist", icon: <MdBrush size={18} /> },
+  { name: "2D/3D Concept Design", icon: <MdBrush size={18} /> },
   { name: "Physics Programming", icon: <FaAtom size={18} /> }
 ];
 
