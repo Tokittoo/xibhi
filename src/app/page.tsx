@@ -6,12 +6,10 @@ import Projects from '@/components/Projects'
 import { AnimationWrapper } from '@/components/ui/animation-wrapper'
 import Writeups from '@/components/Writeups'
 import HallOfFame from '@/components/HallOfFame'
-import HashScrollCenter from '@/components/HashScrollCenter'
 
 const Home = () => {
   return (
     <AnimationWrapper>
-      <HashScrollCenter />
       <Intro />
       <HallOfFame />
       <section id="Skills">
