@@ -4,16 +4,11 @@ import React from 'react'
 import { motion } from 'motion/react'
 import { IconBrandX } from '@tabler/icons-react'
 import { Socials } from './ui/socials'
-import { FaGithub, FaInstagram, FaLinkedin, FaCalendar, FaMedium } from 'react-icons/fa6'
+import { FaGithub, FaInstagram, FaLinkedin, FaMedium } from 'react-icons/fa6'
 import { Highlight } from './ui/highlight'
 import { childVariant } from './ui/animation-wrapper'
 
 const socials = [
-  {
-    name: 'Cal',
-    link: 'https://cal.com/xibhi',
-    icon: FaCalendar
-  },
   {
     name: 'Instagram',
     link: 'https://www.instagram.com/_xibhi_',
@@ -80,3 +75,4 @@ const AboutMe = () => (
 )
 
 export default Intro
+
