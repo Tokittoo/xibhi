@@ -57,6 +57,17 @@ export default function HallOfFame() {
                   />
                 </span>
               </div>
+             <div className="flex-none">
+                <span aria-label="cognition ai Logo">
+                  <Image
+                    className="h-19 w-19 transition-transform duration-200 ease-out hover:scale-125 transform-gpu will-change-transform"
+                    src="/skills/Cognition.png"
+                    alt="cognition ai Logo"
+                    height={108}
+                    width={108}
+                  />
+                </span>
+              </div>
               {/* duplicate set to ensure seamless tiling */}
               <div className="flex-none">
                 <span aria-label="NASA Logo duplicate">
@@ -94,6 +105,17 @@ export default function HallOfFame() {
                   />
                 </span>
               </div>
+             <div className="flex-none">
+                <span aria-label="cognition ai Logo Duplicate">
+                  <Image
+                    className="h-19 w-19 transition-transform duration-200 ease-out hover:scale-125 transform-gpu will-change-transform"
+                    src="/skills/Cognition.png"
+                    alt="cognition ai Logo Duplicate"
+                    height={108}
+                    width={108}
+                  />
+                </span>
+              </div>
             </InfiniteSlider>
 
               <div className="bg-gradient-to-r from-background absolute inset-y-0 left-0 w-20"></div>
@@ -107,5 +129,6 @@ export default function HallOfFame() {
     </section>
   );
 }
+
 
 
