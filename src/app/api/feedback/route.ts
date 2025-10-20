@@ -31,7 +31,7 @@ export async function POST(request: Request) {
     const counts = getCounts(page)
     counts[vote] += 1
     return NextResponse.json({ page, ...counts, total: counts.up + counts.down })
-  } catch (e) {
+  } catch {
     return NextResponse.json({ error: 'Bad request' }, { status: 400 })
   }
 }
