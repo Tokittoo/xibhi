@@ -31,7 +31,7 @@ export default function FeedbackButtons({
       .then(r => r.json())
       .then(d => setCounts({ up: d.up ?? 0, down: d.down ?? 0, total: d.total ?? 0 }))
       .catch(() => setCounts(null))
-  }, [storageKey]);
+  }, [storageKey, pageId]);
 
   const submit = (value: Feedback) => () => {
     if (submitted) return;
@@ -75,6 +75,9 @@ export default function FeedbackButtons({
       </button>
       <div className="mt-2 text-xs text-zinc-400">
         {submitted ? 'Thanks for your feedback.' : null}
+        {counts ? (
+          <span className="ml-2">Up: {counts.up} · Down: {counts.down} · Total: {counts.total}</span>
+        ) : null}
       </div>
     </div>
   );
