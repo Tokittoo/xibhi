@@ -5,7 +5,7 @@ import { motion } from 'motion/react'
 import { IconBrandX } from '@tabler/icons-react'
 import { Socials } from './ui/socials'
 import { FaGithub, FaInstagram, FaLinkedin, FaCalendar, FaMedium } from 'react-icons/fa6'
-import { Highlight } from './ui/highlight'
+import { Highlight } from '@/components/ui/highlight'
 import { childVariant } from './ui/animation-wrapper'
 
 const socials = [
