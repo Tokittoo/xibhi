@@ -60,11 +60,11 @@ export default function HallOfFame() {
              <div className="flex-none">
                 <span aria-label="cognition ai Logo">
                   <Image
-                    className="h-19 w-19 transition-transform duration-200 ease-out hover:scale-125 transform-gpu will-change-transform"
+                    className="h-25 w-25 transition-transform duration-200 ease-out hover:scale-125 transform-gpu will-change-transform"
                     src="/skills/Cognition.png"
                     alt="cognition ai Logo"
-                    height={108}
-                    width={108}
+                    height={106}
+                    width={106}
                   />
                 </span>
               </div>
@@ -106,13 +106,13 @@ export default function HallOfFame() {
                 </span>
               </div>
              <div className="flex-none">
-                <span aria-label="cognition ai Logo Duplicate">
+                <span aria-label="cognition ai Logo">
                   <Image
-                    className="h-19 w-19 transition-transform duration-200 ease-out hover:scale-125 transform-gpu will-change-transform"
+                    className="h-25 w-25 transition-transform duration-200 ease-out hover:scale-125 transform-gpu will-change-transform"
                     src="/skills/Cognition.png"
-                    alt="cognition ai Logo Duplicate"
-                    height={108}
-                    width={108}
+                    alt="cognition ai Logo"
+                    height={106}
+                    width={106}
                   />
                 </span>
               </div>
@@ -129,6 +129,7 @@ export default function HallOfFame() {
     </section>
   );
 }
+
 
 
 
