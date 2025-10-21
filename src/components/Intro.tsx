@@ -62,7 +62,7 @@ const Intro = () => {
           <motion.h1 variants={childVariant} className='text-4xl md:text-5xl font-sans font-bold tracking-tight'>
             Sibhi
           </motion.h1>
-          <motion.p variants={childVariant} className='text-muted-foreground text-sm'>Security Researcher.</motion.p>
+          <motion.p variants={childVariant} className='text-muted-foreground text-sm'>Security Researcher</motion.p>
           <motion.div variants={childVariant}><Socials socials={socials} /></motion.div>
         </div>
       </div>
@@ -80,3 +80,4 @@ const AboutMe = () => (
 )
 
 export default Intro
+
